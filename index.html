@@ -67,7 +67,26 @@
             line-height: 1.8;
             text-align: justify;
         }
+        .integrante-card {
+            border-radius: 15px;
+            transition: 0.3s;
+            margin-bottom: 20px;
+        }
 
+        .integrante-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .cargo {
+            font-weight: bold;
+            color: #0d6efd;
+        }
+
+        .correo {
+            font-size: 14px;
+            color: gray;
+        }
         .img-descripcion {
             max-width: 280px;
             border-radius: 12px;
@@ -157,17 +176,61 @@
             </div>
         </section>
 
-        <section id="integrantes" class="mb-4">
+        <section id="integrantes" class="mb-5">
             <div class="card shadow-sm">
                 <div class="card-body p-4">
-                    <h2 class="card-title mb-3">Integrantes</h2>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Daniel Fernando Artunduaga Sotto</li>
-                        <li class="list-group-item">Juan Camilo Martinez Mendez</li>
-                        <li class="list-group-item">Juan Diego Villamizar Toloza</li>
-                        <li class="list-group-item">Jose Miguel Avella Vargas</li>
-                        <li class="list-group-item">Luis Felipe Vargas Bernal</li>
-                    </ul>
+                    <h2 class="mb-4">Equipo de Trabajo</h2>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="card integrante-card p-3">
+                                <h5>Juan Diego Villamizar</h5>
+                                <p class="cargo">CEO</p>
+                                <p>Liderazgo, tiempos y coordinación general.</p>
+                                <p class="correo">jvillamizart@unal.edu.co</p>
+                            </div>
+                        </div>                        
+
+                        <div class="col-md-4">
+                            <div class="card integrante-card p-3">
+                                <h5>Daniel Fernando Artunduaga</h5>
+                                <p class="cargo">Director Financiero</p>
+                                <p>Gestión de recursos y viabilidad.</p>
+                                <p class="correo">daniel@unal.edu.co</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card integrante-card p-3">
+                                <h5>Juan Camilo Martinez</h5>
+                                <p class="cargo">Director Científico</p>
+                                <p>Rigor técnico y funcionamiento físico.</p>
+                                <p class="correo">Juamartinezme@unal.edu.co</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-4">
+                            <div class="card integrante-card p-3">
+                                <h5>Jose Miguel Avella</h5>
+                                <p class="cargo">Director Científico</p>
+                                <p>Rigor técnico y funcionamiento físico.</p>
+                                <p class="correo">joavellav@unal.edu.co</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card integrante-card p-3">
+                                <h5>Luis Felipe Vargas</h5>
+                                <p class="cargo">Director Creativo</p>
+                                <p>Estética, diseño y comunicación.</p>
+                                <p class="correo">luvargasbe@unal.edu.co</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
