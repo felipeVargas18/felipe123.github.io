@@ -14,12 +14,29 @@
         }
 
         header {
-            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+            position: relative;
+            background-image: url('img/fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: white;
-            padding: 60px 20px;
+            padding: 100px 20px;
             text-align: center;
         }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
 
+        header .container {
+            position: relative;
+            z-index: 1;
+        }
         section {
             scroll-margin-top: 80px;
         }
@@ -27,6 +44,17 @@
         .card {
             border: none;
             border-radius: 15px;
+        }
+        .titulo {
+            font-size: 60px;
+            font-weight: bold;
+            color: #f1c40f;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .subtitulo {
+            font-size: 24px;
+            color: #ecf0f1;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
         }
 
         footer {
@@ -43,15 +71,15 @@
     <!-- Encabezado -->
     <header>
         <div class="container">
-            <h1 class="fw-bold">Nombre del Proyecto</h1>
-            <p class="lead mb-0">Descripción corta del proyecto</p>
+            <h1 class="titulo">FISICURIOSOS</h1>
+            <p class="subtitulo">Rube Goldberg Machine</p>
         </div>
     </header>
 
     <!-- Menú -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Proyecto</a>
+            <a class="navbar-brand" href="#">Nuestro Proyecto</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -81,8 +109,7 @@
                 <div class="card-body p-4">
                     <h2 class="card-title mb-3">Descripción del Proyecto</h2>
                     <p class="card-text">
-                        Aquí va la descripción del proyecto. Explica de qué trata,
-                        para qué sirve, qué problema resuelve y cuál es su importancia.
+                        El presente proyecto consiste en el diseño, análisis y construcción de un sistema                         secuencial de eventos físicos, comúnmente conocido como Máquina de Rube Goldberg. El dispositivo tiene como propósito realizar una tarea sencilla y cotidiana, que es apagar una vela a través de una reacción en cadena compleja, dividida en cinco etapas.
                     </p>
                     <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
