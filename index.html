@@ -10,7 +10,7 @@
 
     <style>
         body {
-            background-color: #f4f6f9;
+            background-color: #eef1f5;
         }
 
         header {
@@ -57,6 +57,36 @@
             text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
         }
 
+        .titulo-seccion {
+            font-size: 34px;
+            margin-bottom: 25px;
+        }
+
+        .texto-descripcion {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .img-descripcion {
+            max-width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .img-descripcion:hover {
+            transform: scale(1.05);
+        }
+
+        .descripcion-card {
+           border-radius: 20px;
+        }
+
+        .card-body {
+            padding: 40px;
+        }
+
         footer {
             background-color: #212529;
             color: white;
@@ -79,7 +109,7 @@
     <!-- Menú -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Nuestro Proyecto</a>
+            <a class="navbar-brand" href="#">La máquina perezosa</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -93,9 +123,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#integrantes">Integrantes</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#objetivos">Objetivos</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -104,14 +131,28 @@
     <!-- Contenido -->
     <main class="container my-5">
 
-        <section id="descripcion" class="mb-4">
-            <div class="card shadow-sm">
-                <div class="card-body p-4">
-                    <h2 class="card-title mb-3">Descripción del Proyecto</h2>
-                    <p class="card-text">
-                        El presente proyecto consiste en el diseño, análisis y construcción de un sistema                         secuencial de eventos físicos, comúnmente conocido como Máquina de Rube Goldberg. El dispositivo tiene como propósito realizar una tarea sencilla y cotidiana, que es apagar una vela a través de una reacción en cadena compleja, dividida en cinco etapas.
-                    </p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+        <section id="descripcion" class="mb-5">
+            <div class="card shadow-sm descripcion-card">
+                <div class="card-body">
+                    <h2 class="titulo-seccion">Descripción del Proyecto</h2>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <p class="texto-descripcion">
+                                Nuestro proyecto consiste en la creación de una Máquina de Rube Goldberg, un dispositivo 
+                                que transforma una tarea simple en una experiencia dinámica y creativa mediante una secuencia 
+                                de eventos físicos. La meta final es apagar una vela a través de una reacción en cadena dividida
+                                en cinco etapas, donde intervienen principios como el movimiento, la gravedad, el impulso y la
+                                transferencia de energía. Con este proyecto buscamos demostrar, de forma práctica y visual, 
+                                cómo la física puede aplicarse de manera innovadora en la construcción de mecanismos funcionales.
+                            </p>
+                        </div>		
+
+                        <div class="col-md-5 text-center">
+                            <img src="img/descrip.jpg" class="img-descripcion">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -131,19 +172,7 @@
             </div>
         </section>
 
-        <section id="objetivos" class="mb-4">
-            <div class="card shadow-sm">
-                <div class="card-body p-4">
-                    <h2 class="card-title mb-3">Objetivos</h2>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Objetivo general del proyecto</li>
-                        <li class="list-group-item">Objetivo específico 1</li>
-                        <li class="list-group-item">Objetivo específico 2</li>
-                        <li class="list-group-item">Objetivo específico 3</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+
 
     </main>
 
